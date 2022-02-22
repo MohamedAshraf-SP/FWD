@@ -60,12 +60,12 @@ try {
                 event.preventDefault()
                 let sec = document.getElementById(ele.className)
                 sec.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
-                document.querySelector(`.${section.id}`).classList.add('active')
+                this.classList.add('active')
 
 
                 for (const elem of liS) {
                     if (this != elem)
-                        document.querySelector(`.${section.id}`).classList.remove('active')
+                        elem.classList.remove('active')
 
                 }
 
